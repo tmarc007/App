@@ -1,0 +1,20 @@
+.product {
+  background-color: aqua;
+  border: 1px solid green;
+  margin-bottom: 12px;
+
+  display: inline-block;
+  width: 320px;
+  height: 380px;
+  border-radius: 4px;
+  margin: 0 7px 12px;
+}
+
+.product h6 {
+  font-size: 22px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 0;
+}
+
+.product Quantity_Picker {
+}
