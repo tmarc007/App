@@ -1,5 +1,5 @@
 import "./Catalog.css";
-import Product from "./../Product";
+import Product from "../components/Product";
 
 function Catalog() {
   const data = [
@@ -11,10 +11,10 @@ function Catalog() {
       id: "1",
     },
     {
-      title: "Unearthed Arcana",
+      title: "Unearthed Arcana.jpg",
       price: 40,
       catagory: "Misc",
-      image: "Unearthed Arcna.jpg",
+      image: "Unearthed Arcana.jpg",
       id: "2",
     },
     {
@@ -56,7 +56,7 @@ function Catalog() {
       title: "Magic Realm",
       price: 95,
       catagory: "Fantasy Board Game",
-      image: "Magic Realm.jpg",
+      image: "Magic Realm.png",
       id: "8",
     },
   ];
@@ -65,14 +65,19 @@ function Catalog() {
     <div className="catalog page">
       <h1>Our amazing catalog!</h1>
 
-      <Product info={data[0]} />
+      {data.map((prod) => (
+        <Product key={prod._id} info={prod} />
+      ))}
+
+      {/* The above maping feature replaces this section */}
+      {/* <Product info={data[0]} />
       <Product info={data[1]} />
       <Product info={data[2]} />
       <Product info={data[3]} />
       <Product info={data[4]} />
       <Product info={data[5]} />
       <Product info={data[6]} />
-      <Product info={data[7]} />
+      <Product info={data[7]} /> */}
 
       {/* This section was replaced with the above to make things easier */}
       {/* <Product title="Axis & Allies" price="80" image="" />

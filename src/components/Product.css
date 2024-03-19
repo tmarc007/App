@@ -2,7 +2,7 @@
   background-color: aqua;
   border: 1px solid green;
   margin-bottom: 12px;
-
+  vertical-align: top;
   display: inline-block;
   width: 320px;
   height: 380px;
@@ -16,5 +16,7 @@
   margin: 0;
 }
 
-.product Quantity_Picker {
+.product img {
+  width: 280px;
+  height: 270px;
 }
