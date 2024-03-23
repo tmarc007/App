@@ -1,0 +1,14 @@
+.admin .parent {
+  display: flex;
+}
+
+.admin h1 {
+  color: rgb(6, 168, 27);
+}
+
+.admin .prods {
+  flex: 2;
+}
+.admin .coupons {
+  flex: 1;
+}

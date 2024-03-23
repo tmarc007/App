@@ -1,13 +1,13 @@
 .about {
-  background-color: blue;
+  background-color: rgb(129, 163, 124);
 }
 
 .about h3 {
-  color: rgb(169, 219, 30);
+  color: blueviolet;
 }
 
-.about contact {
-  background-color: red;
+.about .contact {
+  background-color: aqua;
   border: 1px;
   border-radius: 5px;
   padding: 10px;
@@ -15,4 +15,8 @@
   width: 450px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.about .btn {
+  background-color: blueviolet;
 }

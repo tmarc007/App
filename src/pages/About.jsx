@@ -15,7 +15,9 @@ function About() {
 
       {contactVisible ? (
         <div className="contact">
-          <p>You can reach me at: tdsfsdfsd@dgdda.cn.com</p>
+          <p>
+            You can reach me at: <b>not-giving-you-my-email@gmail.com</b>
+          </p>
         </div>
       ) : null}
 
