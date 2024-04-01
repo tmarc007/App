@@ -1,14 +1,55 @@
-.admin .parent {
-  display: flex;
+.admin {
+  background-color: rgb(129, 163, 124);
 }
 
 .admin h1 {
-  color: rgb(6, 168, 27);
+  color: black;
+}
+
+.admin .parent {
+  display: flex;
+  justify-content: center;
 }
 
 .admin .prods {
   flex: 2;
+  margin: 0 20px;
+  max-width: 600px;
 }
+
 .admin .coupons {
   flex: 1;
+  margin: 0 20px;
+  max-width: 500px;
+}
+
+.admin .form {
+  border: 3px solid blueviolet;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: left;
+  background-color: aqua;
+}
+
+.admin .form div {
+  margin-bottom: 10px;
+}
+
+.admin ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.admin li {
+  display: block;
+  border: 3px solid blueviolet;
+  background-color: aqua;
+  color: black;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  /* margin-left: 2px;
+  margin-right: 2px; */
 }

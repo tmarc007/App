@@ -12,7 +12,9 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="footer">
-      <h1>This is a Footer</h1>
+      <h1>Thank you for visiting us! 😀</h1>
+      <h4>Order online or visit our physical address at:</h4>
+      <h4>1234 MLK Hwy., Suite 208, San Diego CA 92154</h4>
     </div>
   );
 }

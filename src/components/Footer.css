@@ -1,9 +1,14 @@
 .footer h1 {
-  color: purple;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  color: blueviolet;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
 }
 
-.footer h6 {
-  color: blue;
+.footer h4 {
+  color: blueviolet;
+  padding-bottom: 0.2rem;
+}
+
+.footer {
+  background-color: black;
 }
