@@ -20,3 +20,19 @@
   width: 280px;
   height: 265px;
 }
+
+.product .price {
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.product .total {
+  color: blueviolet;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* .product .controls {
+  display: flex;
+  justify-content: space-around;
+} */

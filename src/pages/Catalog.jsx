@@ -5,7 +5,7 @@ function Catalog() {
   const data = [
     {
       title: "Axis & Allies",
-      price: "80",
+      price: 80.11,
       catagory: "Board Game",
       image: "Axis.jpg",
       id: "1",
