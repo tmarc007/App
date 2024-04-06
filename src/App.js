@@ -11,6 +11,7 @@ import Admin from './pages/Admin';
 import GlobalProvider from './context/GlobalProvider';
 
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Cart from './pages/Cart';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/shoppinglist' element={<ShoppingList />} />
           <Route path='/admin' element={<Admin />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
 
         <Footer></Footer>

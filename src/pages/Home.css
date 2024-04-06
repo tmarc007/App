@@ -1,3 +1,30 @@
+.home {
+  background-color: rgb(129, 163, 124);
+}
+
 .home h1 {
-  color: aquamarine;
+  color: blueviolet;
+}
+
+.home img {
+  width: 100%;
+  height: 71vh;
+}
+
+.home .info {
+  position: absolute;
+  top: 48rem;
+  left: 24rem;
+}
+
+.home .info h2,
+h3 {
+  color: blueviolet;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home a {
+  background-color: blueviolet;
+  font-size: 1.3rem;
 }

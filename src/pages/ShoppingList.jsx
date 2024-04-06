@@ -2,7 +2,7 @@ import "./ShoppingList.css";
 import { useState } from "react";
 
 function ShoppingList() {
-  const [list, setList] = useState(["Test 1", "Test 2", "Blah Blah Blah"]);
+  const [list, setList] = useState(["THIS PAGE IS UNDER CONSTUCTION!!!"]);
   const [text, setText] = useState("");
 
   function addItem() {

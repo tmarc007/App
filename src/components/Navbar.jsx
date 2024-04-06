@@ -15,6 +15,18 @@ import { useContext } from "react";
 function Navbar() {
   const cart = useContext(DataContext).cart;
 
+  function getNumProducts() {
+    let total = 0;
+    for (let i = 0; i < cart.length; i++) {
+      /**create the for loop that will travel the list/array */
+      let prod = cart[i]; /** Get every single product */
+      total +=
+        prod.quantity; /** from the product get the quantity. Add the quantity to total */
+    }
+
+    return total;
+  }
+
   return (
     <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
       <div className="container-fluid">
@@ -81,9 +93,9 @@ function Navbar() {
             </li>
           </ul>
           <div className="d-flex" role="search">
-            <button className="btn btn-outline-light" type="button">
-              {cart.length} Cart
-            </button>
+            <Link className="btn btn-outline-light" to="/cart">
+              {getNumProducts()} Cart
+            </Link>
           </div>
         </div>
       </div>
