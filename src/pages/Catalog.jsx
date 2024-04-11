@@ -1,65 +1,20 @@
-import "./Catalog.css";
+import { useEffect, useState } from "react";
 import Product from "../components/Product";
+import "./Catalog.css";
+import DataService from "../services/dataService";
 
 function Catalog() {
-  const data = [
-    {
-      title: "Axis & Allies",
-      price: 80.11,
-      catagory: "Board Game",
-      image: "Axis.jpg",
-      id: "1",
-    },
-    {
-      title: "Unearthed Arcana.jpg",
-      price: 40,
-      catagory: "Misc",
-      image: "Unearthed Arcana.jpg",
-      id: "2",
-    },
-    {
-      title: "D & D DM Manual",
-      price: 80,
-      catagory: "Classic Fantasy",
-      image: "D & D Guide.jpg",
-      id: "3",
-    },
-    {
-      title: "Star Frontiers",
-      price: 50,
-      catagory: "Sci-Fi",
-      image: "Star Frontiers.jpg",
-      id: "4",
-    },
-    {
-      title: "Game of Thrones",
-      price: 50,
-      catagory: "Fantasy Board Game",
-      image: "Game of thrones.jpg",
-      id: "5",
-    },
-    {
-      title: "Gloomhaven",
-      price: 110,
-      catagory: "Fantasy Board Game",
-      image: "Gloomhaven.jpg",
-      id: "6",
-    },
-    {
-      title: "Hero Quest",
-      price: 85,
-      catagory: "Fantasy Board Game",
-      image: "Hero Quest.jpg",
-      id: "7",
-    },
-    {
-      title: "Magic Realm",
-      price: 95,
-      catagory: "Fantasy Board Game",
-      image: "Magic Realm.png",
-      id: "8",
-    },
-  ];
+  const [data, setData] = useState([]);
+
+  async function loadCatalog() {
+    let service = new DataService();
+    let cat = await service.getCatalog();
+    setData(cat);
+  }
+
+  useEffect(function () {
+    loadCatalog();
+  }, []);
 
   return (
     <div className="catalog page">
